@@ -1,0 +1,21 @@
+Unit Type,Structure,Passage 1,Passage 2
+clause,"[&, S, M/O, C, A]",2,2
+clause,"[&, S, M/O, C]",0,2
+clause,"[A, S, M/O, A]",1,1
+clause,"[A, S, M/O, C, A]",1,0
+clause,"[A, S, M/O, C]",2,3
+clause,"[I, M, C]",1,1
+clause,"[M, C, A]",0,1
+clause,"[S, A, M/O, A]",1,0
+clause,"[S, M/O, C, A]",2,2
+clause,"[S, M/O, C]",1,1
+clause,"[S, M/O]",1,0
+ngp,"[&, dd, h]",0,1
+ngp,"[&, h]",1,0
+ngp,"[dd, h]",11,7
+ngp,"[dd, m, h]",2,0
+ngp,[dd],0,1
+ngp,[h],9,10
+ngp,"[m, h]",2,4
+ngp,"[qd, h]",1,5
+ngp,"[qd, m, h]",4,3

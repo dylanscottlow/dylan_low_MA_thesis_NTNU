@@ -1,0 +1,201 @@
+﻿passage,sigma,clause,text,structure,unit,unit_type,parataxis,upwards_fill,word_count,max_layer_depth
+1,1,1,,"[S, M/O, C, A]",clause,simple,0,sigma,,
+1,2,1,,"[S, M/O, C, A]",clause,simple,0,sigma,,
+1,3,1,,"[A, S, M/O, C]",clause,matrix,0,sigma,,
+1,3,2,,"[I, M, C]",clause,embedded,0,A,,
+1,3,3,,"[I, M, C]",clause,embedded,0,C,,
+1,4,1,,"[&, S, O, N, M, C]",clause,matrix,0,sigma,,
+1,4,2,,"[&, S, X, M, C]",clause,embedded,0,C,,
+1,5,1,,"[S, M/O, C, A]",clause,simple,0,sigma,,
+1,6,1,,"[A, S, M/O, A]",clause,matrix,0,sigma,,
+1,6,2,,"[S, M/O]",clause,embedded,0,cv,,
+1,7,1,,"[A, S, M/O, C]",clause,matrix,0,sigma,,
+1,7,2,,"[&, S, A/N, M/O, C]",clause,"matrix, embedded",0,C,,
+1,7,3,,"[I, M, C]",clause,embedded,0,C,,
+1,8,1,,"[S, A, M/O, C]",clause,matrix,0,sigma,,
+1,8,2,,"[I, M, C]",clause,embedded,0,C,,
+1b,1,1,John was a young man with a simple problem.,"[S, M/O, C, A]",clause,simple,0,sigma,9,3
+1b,1,1,John,[h],ngp,simple,0,S,1,1
+1b,1,1,a young man,"[qd, m, h]",ngp,simple,0,C,3,1
+1b,1,1,a simple problem,"[qd, m, h]",ngp,simple,0,cv,3,1
+1b,2,1,He had a minor dispute with his neighbor.,"[S, M/O, C, A]",clause,simple,0,sigma,8,3
+1b,2,1,He,[h],ngp,simple,0,S,1,1
+1b,2,1,a minor dispute,"[qd, m, h]",ngp,simple,0,C,3,1
+1b,2,1,his neighbour,"[dd, h]",ngp,simple,0,cv,2,1
+1b,3,1,[A] James sought legal advice.,"[A, S, M/O, C]",clause,matrix,0,sigma,4,2
+1b,3,1,James,[h],ngp,simple,0,S,1,1
+1b,3,1,legal advice,"[m, h]",ngp,simple,0,C,2,1
+1b,3,2,"To solve the problem,","[I, M, C]",clause,embedded,0,A,4,2
+1b,3,2,the problem,"[dd, h]",ngp,simple,0,C,2,1
+1b,4,1,"At first, John was happy with his lawyer.","[A, S, M/O, C, A]",clause,simple,0,sigma,8,3
+1b,4,1,John,[h],ngp,simple,0,S,1,1
+1b,4,1,his lawyer,"[dd, h]",ngp,simple,0,cv,2,1
+1b,5,1,But the lawyer charged exorbitant fees for every phone call and email.,"[&, S, M/O, C, A]",clause,simple,0,sigma,12,3
+1b,5,1,the lawyer,"[dd, h]",ngp,simple,0,S,2,1
+1b,5,1,exorbitant fees,"[m, h]",ngp,simple,0,C,2,1
+1b,5,1,every phone call,"[qd, m, h]",ngp,matrix,1,cv,3,1
+1b,5,1,phone,[h],ngp,embedded,0,m,1,1
+1b,5,1,and email,"[&, h]",ngp,simple,2,cv,2,1
+1b,6,1,He drained John's finances.,"[S, M/O, C]",clause,simple,0,sigma,4,3
+1b,6,1,He,[h],ngp,simple,0,S,1,1
+1b,6,1,John's finances,"[dd, h]",ngp,matrix,0,C,2,2
+1b,6,1,John,[h],ngp,embedded,0,po,1,1
+1b,7,1,As [cv] John's savings bled rapidly.,"[A, S, M/O, A]",clause,matrix,0,sigma,5,3
+1b,7,1,John's savings,"[dd, h]",ngp,matrix,0,C,2,2
+1b,7,1,John,[h],ngp,embedded,0,po,1,1
+1b,7,2,"the legal process continued,","[S, M/O]",clause,embedded,0,cv,4,2
+1b,7,2,the legal process,"[dd, m, h]",ngp,simple,0,S,3,1
+1b,8,1,"In the end, John realized","[A, S, M/O, C]",clause,matrix,0,sigma,5,3
+1b,8,1,the end,"[dd, h]",ngp,simple,0,cv,2,1
+1b,8,1,John,[h],ngp,simple,0,S,1,1
+1b,8,2,that the lawyer provided no justice for his clients.,"[&, S, M/O, C, A]",clause,embedded,0,C,9,3
+1b,8,2,the lawyer,"[dd, h]",ngp,simple,0,S,2,1
+1b,8,2,no justice,"[qd, h]",ngp,simple,0,C,2,1
+1b,8,2,his clients,"[dd, h]",ngp,simple,0,cv,2,1
+1b,9,1,The lawyer only sucked his clients' money.,"[S, A, M/O, C]",clause,simple,0,sigma,7,4
+1b,9,1,the lawyer,"[dd, h]",ngp,simple,0,S,2,1
+1b,9,1,his clients' money,"[dd, h]",ngp,matrix,0,C,3,3
+1b,9,1,his clients,"[dd, h]",ngp,embedded,0,po,2,1
+2,1,1,,"[S, M/O, A]",clause,simple,0,sigma,,
+2,2,1,,"[S, M/O, C]",clause,simple,1,sigma,,
+2,2,2,,"[&, M/O, C, A]",clause,matrix,2,sigma,,
+2,2,3,,"[M, C, A]",clause,"matrix, embedded",0,cv,,
+2,3,1,,"[&, S, M/O, C, A]",clause,matrix,0,sigma,,
+2,3,2,,"[B, S, M/O, A]",clause,embedded,0,A,,
+2,4,1,,"[S, M/O, C]",clause,simple,1,sigma,,
+2,4,2,,"[&, M/O, C]",clause,matrix,2,sigma,,
+2,4,3,,"[S, M/O, C]",clause,embedded,0,C,,
+2,5,1,,"[A, S, M/O, C]",clause,matrix,0,sigma,,
+2,5,2,,"[I, M]",clause,embedded,0,A,,
+2,6,1,,"[A, S, M/O, A]",clause,matrix,0,sigma,,
+2,6,2,,"[S, M/O]",clause,embedded,0,cv,,
+2,7,1,,"[A, S, M/O, C]",clause,simple,1,sigma,,
+2,7,2,,"[&, S, M/O, C]",clause,simple,2,sigma,,
+2b,1,1,Sarah was a project manager at a digital consulting company.,"[S, M/O, C, A]",clause,simple,0,sigma,10,4
+2b,1,1,Sarah,[h],ngp,simple,,S,1,1
+2b,1,1,a project manager,"[qd, m, h]",ngp,simple,,C,3,1
+2b,1,1,a digital consulting company,"[qd, m, h]",ngp,matrix,,cv,4,2
+2b,1,1,digital consulting,"[m, h]",ngp,embedded,,m,2,1
+2b,2,1,"As a project manager, she was responsible for","[A, S, M/O, C, A]",clause,matrix,0,sigma,8,3
+2b,2,1,a project manager,"[qd, m, h]",ngp,simple,,cv,3,1
+2b,2,1,she,[h],ngp,simple,,S,1,1
+2b,2,2,developing software solutions for small businesses.,"[M, C, A]",clause,embedded,0,cv,6,3
+2b,2,2,software solutions,"[m, h]",ngp,matrix,,C,2,2
+2b,2,2,software,[h],ngp,embedded,,m,1,1
+2b,2,2,small businesses,"[m, h]",ngp,simple,,cv,2,1
+2b,3,1,But she had a problem,"[&, S, M/O, C, A]",clause,matrix,0,sigma,5,2
+2b,3,1,she,[h],ngp,simple,0,S,1,1
+2b,3,1,a problem,"[qd, h]",ngp,simple,0,C,2,1
+2b,3,2,when one client left because of money concerns.,"[B, S, M/O, A]",clause,embedded,0,A,8,4
+2b,3,2,one client,"[qd, h]",ngp,simple,,S,2,1
+2b,3,2,money concerns,"[m, h]",ngp,matrix,,cv,2,2
+2b,3,2,money,[h],ngp,embedded,,m,1,1
+2b,4,1,The client complained,"[S, M/O, C]",clause,matrix,0,sigma,3,2
+2b,4,1,The client,"[dd, h]",ngp,simple,0,S,2,1
+2b,4,2,that the plan was expensive.,"[&, S, M/O, C]",clause,embedded,0,C,5,2
+2b,4,2,the plan,"[dd, h]",ngp,simple,0,S,2,1
+2b,5,1,They attacked Sarah's plan.,"[S, M/O, C]",clause,simple,0,sigma,4,4
+2b,5,1,They,[h],ngp,simple,0,S,1,1
+2b,5,1,Sarah's plan,"[dd, h]",ngp,matrix,0,C,2,3
+2b,5,1,Sarah,[h],ngp,embedded,0,po,1,2
+2b,6,1,[A] Sarah proposed a cheaper plan.,"[A, S, M/O, C]",clause,matrix,0,sigma,5,2
+2b,6,1,Sarah,[h],ngp,simple,0,S,1,1
+2b,6,1,a cheaper plan,"[qd, m, h]",ngp,simple,0,C,3,1
+2b,6,2,"To respond to this,","[I, M, C]",clause,embedded,0,A,4,3
+2b,6,2,this,[dd],ngp,simple,0,cv,1,1
+2b,7,1,"Slowly, Sarah and the client advanced towards an agreement.","[A, S, M/O, A]",clause,simple,0,sigma,9,3
+2b,7,1,Sarah,[h],ngp,simple,1,S,1,1
+2b,7,1,and the client,"[&, dd, h]",ngp,simple,2,S,3,1
+2b,7,1,an agreement,"[qd, h]",ngp,simple,0,cv,2,1
+2b,8,1,"In the end, Sarah secured the deal","[A, S, M/O, C]",clause,simple,1,sigma,7,3
+2b,8,1,the end,"[dd, h]",ngp,simple,0,cv,2,1
+2b,8,1,Sarah,[h],ngp,simple,0,S,1,1
+2b,8,1,the deal,"[dd, h]",ngp,simple,0,C,2,1
+2b,8,2,and the client was satisfied.,"[&, S, M/O, C]",clause,simple,2,sigma,5,2
+2b,8,2,the client,"[dd, h]",ngp,simple,0,S,2,1
+1c,1,1,John was a young man with a simple problem.,"[S, M/O, C, A]",clause,simple,0,sigma,9,3
+1c,1,1,John,[h],ngp,simple,0,S,1,1
+1c,1,1,a young man,"[qd, m, h]",ngp,simple,0,C,3,1
+1c,1,1,a simple problem,"[qd, m, h]",ngp,simple,0,cv,3,1
+1c,2,1,He had a minor dispute with his neighbor.,"[S, M/O, C, A]",clause,simple,0,sigma,8,3
+1c,2,1,He,[h],ngp,simple,0,S,1,1
+1c,2,1,a minor dispute,"[qd, m, h]",ngp,simple,0,C,3,1
+1c,2,1,his neighbour,"[dd, h]",ngp,simple,0,cv,2,1
+1c,3,1,[A] John sought legal advice.,"[A, S, M/O, C]",clause,matrix,0,sigma,4,2
+1c,3,1,John,[h],ngp,simple,0,S,1,1
+1c,3,1,legal advice,"[m, h]",ngp,simple,0,C,2,1
+1c,3,2,"To solve the problem,","[I, M, C]",clause,embedded,0,A,4,2
+1c,3,2,the problem,"[dd, h]",ngp,simple,0,C,2,1
+1c,4,1,"At first, John was happy with his lawyer.","[A, S, M/O, C, A]",clause,simple,0,sigma,8,3
+1c,4,1,John,[h],ngp,simple,0,S,1,1
+1c,4,1,his lawyer,"[dd, h]",ngp,simple,0,cv,2,1
+1c,5,1,But the lawyer charged exorbitant fees for every phone call and email.,"[&, S, M/O, C, A]",clause,simple,0,sigma,12,3
+1c,5,1,the lawyer,"[dd, h]",ngp,simple,0,S,2,1
+1c,5,1,exorbitant fees,"[m, h]",ngp,simple,0,C,2,1
+1c,5,1,every phone call,"[qd, m, h]",ngp,matrix,1,cv,3,1
+1c,5,1,phone,[h],ngp,embedded,0,m,1,1
+1c,5,1,and email,"[&, h]",ngp,simple,2,cv,2,1
+1c,6,1,The expensive fees drained John's finances.,"[S, M/O, C]",clause,simple,0,sigma,6,3
+1c,6,1,The expensive fees,"[dd, m, h]",ngp,simple,0,S,3,1
+1c,6,1,John's finances,"[dd, h]",ngp,matrix,0,C,2,2
+1c,6,1,John,[h],ngp,embedded,0,po,1,1
+1c,7,1,As [cv] John's savings bled rapidly.,"[A, S, M/O, A]",clause,matrix,0,sigma,5,3
+1c,7,1,John's savings,"[dd, h]",ngp,matrix,0,C,2,2
+1c,7,1,John,[h],ngp,embedded,0,po,1,1
+1c,7,2,"the legal process continued,","[S, M/O]",clause,embedded,0,cv,4,2
+1c,7,2,the legal process,"[dd, m, h]",ngp,simple,0,S,3,1
+1c,8,1,"In the end, John realized","[A, S, M/O, C]",clause,matrix,0,sigma,5,3
+1c,8,1,the end,"[dd, h]",ngp,simple,0,cv,2,1
+1c,8,1,John,[h],ngp,simple,0,S,1,1
+1c,8,2,that the lawyer provided no justice for his clients.,"[&, S, M/O, C, A]",clause,embedded,0,C,9,3
+1c,8,2,the lawyer,"[dd, h]",ngp,simple,0,S,2,1
+1c,8,2,no justice,"[qd, h]",ngp,simple,0,C,2,1
+1c,8,2,his clients,"[dd, h]",ngp,simple,0,cv,2,1
+1c,9,1,The lawyer only sucked money from his clients.,"[S, A, M/O, A]",clause,simple,0,sigma,8,3
+1c,9,1,the lawyer,"[dd, h]",ngp,simple,0,S,2,1
+1c,9,1,money,[h],ngp,simple,0,C,1,1
+1c,9,1,his clients,"[dd, h]",ngp,simple,0,cv,2,1
+2c,1,1,Sarah was a project manager at a digital consulting company.,"[S, M/O, C, A]",clause,simple,0,sigma,10,4
+2c,1,1,Sarah,[h],ngp,simple,0,S,1,1
+2c,1,1,a project manager,"[qd, m, h]",ngp,simple,0,C,3,1
+2c,1,1,a digital consulting company,"[qd, m, h]",ngp,matrix,0,cv,4,2
+2c,1,1,digital consulting,"[m, h]",ngp,embedded,0,m,2,1
+2c,2,1,She was responsible for,"[S, M/O, C, A]",clause,matrix,0,sigma,4,2
+2c,2,1,She,[h],ngp,simple,0,S,1,1
+2c,2,2,developing software solutions for small businesses.,"[M, C, A]",clause,embedded,0,cv,6,3
+2c,2,2,software solutions,"[m, h]",ngp,matrix,0,C,2,2
+2c,2,2,software,[h],ngp,embedded,0,m,1,1
+2c,2,2,small businesses,"[m, h]",ngp,simple,0,cv,2,1
+2c,3,1,But she had a problem with a project.,"[&, S, M/O, C, A]",clause,simple,0,sigma,8,3
+2c,3,1,she,[h],ngp,simple,0,S,1,1
+2c,3,1,a problem,"[qd, h]",ngp,simple,0,C,2,1
+2c,3,1,a project,"[qd, h]",ngp,simple,0,cv,2,1
+2c,4,1,A client left the project because of money concerns.,"[&, S, M/O, C, A]",clause,simple,0,sigma,9,4
+2c,4,1,A client,"[qd, h]",ngp,simple,0,S,2,1
+2c,4,1,the project,"[dd, h]",ngp,simple,0,C,2,1
+2c,4,1,money concerns,"[m, h]",ngp,matrix,0,cv,2,2
+2c,4,1,money,[h],ngp,embedded,0,m,1,1
+2c,5,1,The client complained,"[S, M/O, C]",clause,matrix,0,sigma,3,2
+2c,5,1,The client,"[dd, h]",ngp,simple,0,S,2,1
+2c,5,2,that the plan was expensive.,"[&, S, M/O, C]",clause,embedded,0,C,5,2
+2c,5,2,the plan,"[dd, h]",ngp,simple,0,S,2,1
+2c,6,1,"In a meeting, they attacked Sarah's plan.","[A, S, M/O, C]",clause,simple,0,sigma,7,4
+2c,6,1,a meeting,"[qd, h]",ngp,simple,0,cv,2,1
+2c,6,1,they,[h],ngp,simple,0,S,1,1
+2c,6,1,Sarah's plan,"[dd, h]",ngp,matrix,0,C,2,3
+2c,6,1,Sarah,[h],ngp,embedded,0,po,1,2
+2c,7,1,[A] Sarah proposed a cheaper plan.,"[A, S, M/O, C]",clause,matrix,0,sigma,5,2
+2c,7,1,Sarah,[h],ngp,simple,0,S,1,1
+2c,7,1,a cheaper plan,"[qd, m, h]",ngp,simple,0,C,3,1
+2c,7,2,"To respond to this,","[I, M, C]",clause,embedded,0,A,4,3
+2c,7,2,this,[dd],ngp,simple,0,cv,1,1
+2c,8,1,"Slowly, Sarah and the client advanced towards an agreement.","[A, S, M/O, A]",clause,simple,0,sigma,9,3
+2c,8,1,Sarah,[h],ngp,simple,1,S,1,1
+2c,8,1,and the client,"[&, dd, h]",ngp,simple,2,S,3,1
+2c,8,1,an agreement,"[qd, h]",ngp,simple,0,cv,2,1
+2c,9,1,"In the end, Sarah secured the deal","[A, S, M/O, C]",clause,simple,1,sigma,7,3
+2c,9,1,the end,"[dd, h]",ngp,simple,0,cv,2,1
+2c,9,1,Sarah,[h],ngp,simple,0,S,1,1
+2c,9,1,the deal,"[dd, h]",ngp,simple,0,C,2,1
+2c,9,2,and the client was satisfied.,"[&, S, M/O, C]",clause,simple,2,sigma,5,2
+2c,9,2,the client,"[dd, h]",ngp,simple,0,S,2,1
